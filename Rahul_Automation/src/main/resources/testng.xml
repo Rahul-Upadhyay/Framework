@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Free CRM Application Test Suite">
+	
+<!-- 	<!-- <listeners>
+				<listener class-name= "com.mainpack.ExtentReportListener.ExtentReportListenerNG"> </listener>
+			
+	</listeners>
+	 --> -->
+	
+	
+	<test name="Free CRM Application Test Cases">
+		<classes>
+		
+			<!--  For execution, sequence of classes can be changed -->
+			<!--  This will execute all the test cases in one shot -->
+			<!--  This is called as Test Runner Class -->
+			<!--  If no need to execute any test case simply make it a comment -->
+			<!--  Multiple testng.xml files like testng_regression.xml and testng_sanity.xml can be created to execute different set of test cases -->
+			<!--  Listeners tag should be written just after suite and before Test tags -->
+				
+			<class name= "com.testpack.qa.TestCases.ContactsPageTest"></class>
+			<class name= "com.testpack.qa.TestCases.HomePageTest"></class>
+			<class name= "com.testpack.qa.TestCases.LoginPageTest"></class>
+					
+		</classes>	
+	</test>
+</suite>
